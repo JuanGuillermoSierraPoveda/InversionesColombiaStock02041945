@@ -1,0 +1,79 @@
+.card-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn {
+  border: 0;
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.btn-secondary {
+  color: #fff;
+  background: var(--color-secondary);
+}
+
+.badge {
+  display: inline-block;
+  padding: var(--space-1) var(--space-2);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-up {
+  background: rgb(26 127 90 / 15%);
+  color: var(--color-primary);
+}
+
+.badge-down {
+  background: rgb(180 35 24 / 15%);
+  color: var(--color-danger);
+}
+
+.muted {
+  color: var(--color-muted);
+}
+
+.error-text {
+  color: var(--color-danger);
+  font-size: 0.9rem;
+}
+
+.success-text {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+.stack-sm > * + * {
+  margin-top: var(--space-2);
+}
+
+.stack-md > * + * {
+  margin-top: var(--space-4);
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #d5dce3;
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+  background: #fff;
+}
